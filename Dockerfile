@@ -3,6 +3,6 @@ RUN apt-get update
 RUN apt install apache2 -y
 WORKDIR  /var/www/html/
 RUN touch index.html
-RUN echo "This is my container" > index.html
+RUN echo "This is my container using jenkins" > index.html
 EXPOSE 80
 CMD ["apache2ctl", "-D", "FOREGROUND"]
